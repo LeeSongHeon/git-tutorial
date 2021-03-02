@@ -14,4 +14,5 @@ name = []
 rank = []
 value = []
 for name in champion_name:
-    print(champion_name)
+    print('champion_name')
+    print('33333333333333333333333')
