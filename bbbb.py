@@ -12,7 +12,6 @@ sheet = wb.active
 
 # 데이터프레임 내 변수명 생성
 sheet.append(["순위", "챔피언", "승률"])
-
 # 데이터 크롤링 과정
 raw = requests.get('https://www.op.gg/champion/statistics')
 html = BeautifulSoup(raw.text, 'html.parser') 
@@ -31,6 +30,6 @@ for con in container:
 dt = datetime.datetime.now()
 filename = 'opgg_' + dt.strftime("%Y_%m_%d")
 f = open(filename + '.xlsx', 'w')
-
+wb.save(filename + '.xlsx')
  # 종료
 f.close()
