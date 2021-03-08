@@ -1,3 +1,5 @@
+# 메인함수 선언
+if __name__ == "__main__":
 # 패키지 install
 import requests
 from bs4 import BeautifulSoup
