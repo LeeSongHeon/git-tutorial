@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 from openpyxl import Workbook
 import datetime
-
+# 메인함수 설정
 def process_work():
     # Workbook 생성
     wb = Workbook()
